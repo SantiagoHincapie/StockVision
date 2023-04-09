@@ -8,14 +8,14 @@ public class Roles {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_rol;
+    private Long id_rol;
 
     @Column(name = "nombre",nullable = false,length = 30)
     private String nombre;
     @Column(name = "descripcion",nullable = false,length = 300)
     private String descripcion;
 
-    public long getId_rol() {
+    public Long getId_rol() {
         return id_rol;
     }
 

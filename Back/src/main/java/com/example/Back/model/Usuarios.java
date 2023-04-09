@@ -10,10 +10,10 @@ import jakarta.persistence.Table;
 public class Usuarios {
 
     @Id
-    private long id_usuario;
+    private Long id_usuario;
 
     @Column(nullable = false)
-    private long id_rol;
+    private Long id_rol;
 
     @Column(length = 20,nullable = false)
     private String primerNombre;
@@ -30,7 +30,7 @@ public class Usuarios {
     @Column(length = 200,nullable = false)
     private String email;
 
-    public long getId_usuario() {
+    public Long getId_usuario() {
         return id_usuario;
     }
 
@@ -38,7 +38,7 @@ public class Usuarios {
         this.id_usuario = id_usuario;
     }
 
-    public long getId_rol() {
+    public Long getId_rol() {
         return id_rol;
     }
 

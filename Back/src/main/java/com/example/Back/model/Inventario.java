@@ -8,15 +8,15 @@ public class Inventario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_inventario;
+    private Long id_inventario;
 
     @Column(nullable = false)
-    private long id_pedido;
+    private Long id_pedido;
 
     @Column(nullable = false)
-    private long id_estadoInventario;
+    private Long id_estadoInventario;
 
-    public long getId_inventario() {
+    public Long getId_inventario() {
         return id_inventario;
     }
 
@@ -24,7 +24,7 @@ public class Inventario {
         this.id_inventario = id_inventario;
     }
 
-    public long getId_pedido() {
+    public Long getId_pedido() {
         return id_pedido;
     }
 
@@ -32,7 +32,7 @@ public class Inventario {
         this.id_pedido = id_pedido;
     }
 
-    public long getId_estadoInventario() {
+    public Long getId_estadoInventario() {
         return id_estadoInventario;
     }
 

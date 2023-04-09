@@ -8,7 +8,7 @@ public class EstadosPedido {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_estadoPedido;
+    private Long id_estadoPedido;
 
     @Column(length = 30,nullable = false)
     private String estado;
@@ -16,7 +16,7 @@ public class EstadosPedido {
     @Column(length = 300,nullable = false)
     private String Descrip;
 
-    public long getId_estadoPedido() {
+    public Long getId_estadoPedido() {
         return id_estadoPedido;
     }
 
