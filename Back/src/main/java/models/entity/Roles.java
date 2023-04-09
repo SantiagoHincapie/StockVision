@@ -1,7 +1,6 @@
 package models.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 
@@ -10,8 +9,13 @@ import java.io.Serializable;
 @Table(name="Roles")
 public class Roles implements Serializable{
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_rol;
+
+	@Column(length = 35,nullable = false)
 	private String nombre;
+	@Column(length = 100,nullable = false)
 	private String descripcion;
 
 	public Long getId_rol() {
