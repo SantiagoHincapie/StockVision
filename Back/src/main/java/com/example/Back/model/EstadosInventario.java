@@ -8,7 +8,7 @@ public class EstadosInventario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_EstadoInventario;
+    private Long id_EstadoInventario;
 
     @Column(length = 30,nullable = false)
     private String estado;
@@ -16,7 +16,7 @@ public class EstadosInventario {
     @Column(length = 300,nullable = false)
     private String descrip;
 
-    public long getId_EstadoInventario() {
+    public Long getId_EstadoInventario() {
         return id_EstadoInventario;
     }
 

@@ -8,7 +8,7 @@ public class Productos {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_producto;
+    private Long id_producto;
 
     @Column(length = 30, nullable = false)
     private String nombreProducto;
@@ -16,7 +16,7 @@ public class Productos {
     @Column(length = 300,nullable = false)
     private String Descripcion;
 
-    public long getId_producto() {
+    public Long getId_producto() {
         return id_producto;
     }
 

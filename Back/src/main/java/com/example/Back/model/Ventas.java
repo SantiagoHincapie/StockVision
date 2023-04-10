@@ -10,16 +10,16 @@ import java.util.Date;
 public class Ventas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_venta;
+    private Long id_venta;
 
     @Column(nullable = false)
-    private long id_catalogo;
+    private Long id_catalogo;
 
 
     @Column(nullable = false)
     private Date fecha;
 
-    public long getId_venta() {
+    public Long getId_venta() {
         return id_venta;
     }
 
@@ -27,7 +27,7 @@ public class Ventas {
         this.id_venta = id_venta;
     }
 
-    public long getId_catalogo() {
+    public Long getId_catalogo() {
         return id_catalogo;
     }
 
